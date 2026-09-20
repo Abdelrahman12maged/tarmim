@@ -1,0 +1,93 @@
+name: tarmim
+description: "تِرميم — إدارة بسيطة لأعمال الإصلاح والصيانة لكافة الورش"
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.5.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  # State management
+  flutter_bloc: ^8.1.6
+  equatable: ^2.0.5
+
+  # Navigation
+  go_router: ^14.6.2
+
+  # Dependency Injection
+  get_it: ^8.0.3
+
+  # Firebase
+  firebase_core: ^3.8.1
+  firebase_auth: ^5.3.4
+  cloud_firestore: ^5.5.1
+
+  # Fonts
+  google_fonts: ^6.2.1
+
+  # Local storage
+  shared_preferences: ^2.3.3
+
+  # URL launching (WhatsApp, Maps, SMS)
+  url_launcher: ^6.3.1
+
+  # Image Picker for device intake photos
+  image_picker: ^1.1.2
+
+  # Supabase Backend Ready
+  supabase_flutter: ^2.8.3
+
+  # Internationalization / formatting
+  intl: ^0.20.2
+
+  # Icons
+  cupertino_icons: ^1.0.8
+
+  # Splash screen
+  flutter_native_splash: ^2.4.1
+
+  # Local Notifications & Scheduling
+  flutter_local_notifications: ^17.2.2
+  timezone: ^0.9.4
+
+  # PDF Receipt Generation & Printing
+  pdf: ^3.11.1
+  printing: ^5.13.2
+  path_provider: ^2.1.5
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+  flutter_launcher_icons: ^0.13.1
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/images/app_icon.png"
+  min_sdk_android: 21
+  adaptive_icon_background: "#0F172A"
+  adaptive_icon_foreground: "assets/images/app_icon.png"
+
+flutter_native_splash:
+  color: "#0F172A"
+  image: "assets/images/app_logo.png"
+  android_12:
+    color: "#0F172A"
+    image: "assets/images/app_logo.png"
+  fullscreen: true
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+
+  # Fonts are loaded at runtime via google_fonts package
+  # Add local font files here if offline usage is needed
