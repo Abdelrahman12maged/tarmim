@@ -1,4 +1,4 @@
-# 📱 نظام ترميم (Tarmeem) | المنظومة السحابية الذكية لإدارة ورش ومراكز صيانة الأجهزة الذكية
+# 📱 Tarmeem | The Smart Cloud Platform for Device Repair Shop Management
 
 <p align="center">
   <img src="https://img.shields.io/badge/Platform-Flutter%20%7C%20Android%20%7C%20iOS%20%7C%20Web-02569B?logo=flutter" alt="Platform" />
@@ -10,184 +10,187 @@
 
 ---
 
-## 💡 نبذة عن النظام (Elevator Pitch)
-**ترميم (Tarmeem)** هو المنظومة السحابية المتكاملة والمصممة خصيصاً لأصحاب محلات وورش صيانة الهواتف، اللابتوبات، والإلكترونيات. يهدف التطبيق إلى تحويل إدارة الورشة من الطرق التقليدية الورقية المعرضة للضياع والنسيان إلى **مؤسسة احترافية مؤتمتة بالكامل** توفر تجربة رقمية راقية للعميل، وتمنح صاحب العمل السيطرة الكاملة على الإيرادات، الفروع، والمخزون في أي وقت ومن أي مكان.
+## 💡 Elevator Pitch
+
+**Tarmeem** is a complete cloud platform built specifically for phone, laptop, and electronics repair shop owners. It transforms workshop management from error-prone paper logs into a **fully automated, professional operation** — delivering a polished digital experience to customers while giving owners full control over revenue, branches, and inventory, anytime and from anywhere.
 
 ---
 
-## 🌟 لماذا تختار الورش تطبيق "ترميم"؟ (القيمة المضافة للعميل)
+## 🌟 Why Repair Shops Choose Tarmeem (Customer Value Proposition)
 
-| المشكلة في الإدارة التقليدية ❌ | الحل المبتكر مع "ترميم" ✅ |
+| The Problem with Traditional Management ❌ | The Tarmeem Solution ✅ |
 | :--- | :--- |
-| **ضياع الإيصالات الورقية** وإنكار العملاء لتكلفة أو مواصفات الجهاز المستلم. | **إيصال رقمي فوري** مع رابط تتبع سحابي دائم وصورة فحص دقيقة لحالة الجهاز عند الاستلام. |
-| **الاتصالات المتكررة من الزبائن**: *"جهازي خلص ولا لسه؟"* | **بوابة تتبع إلكترونية مباشرة أونلاين** يدخل عليها العميل برقم التذكرة أو هاتفه ليرى حالة جهازه لحظة بلحظة. |
-| **صعوبة مراقبة أكثر من فرع** دون التواجد شخصياً في المكان. | **نظام فروع مركزي (Multi-Branch)** يسمح للمالك بمتابعة كل الفروع والتبديل بينها أو رؤية إجمالي دخل الورشة بضغطة زر. |
-| **عدم معرفة صافي الأرباح الحقيقية** بعد خصم أسعار قطع الغيار بالجملة. | **داشبورد مالي متقدم** يحسب تكلفة الجملة، ومصنعية الورشة، والدفعات المقدمة، والمتبقي بدقة، مع الحفاظ التام على سرية تكلفة القطع عن الزبائن. |
-| **توقف العمل عند انقطاع الإنترنت** في المحل. | **معمارية (Offline-First)** تتيح استمرار استلام وتسليم الأجهزة حتى مع انقطاع الشبكة، والمزامنة تلقائياً فور عودة الاتصال. |
+| **Lost paper receipts** and customer disputes over device condition or cost at drop-off. | **Instant digital receipt** with a permanent cloud tracking link and a precise intake inspection photo. |
+| **Repeated customer calls**: *"Is my device ready yet?"* | **Live online tracking portal** — customers check real-time repair status using their ticket number or phone number. |
+| **Difficulty overseeing multiple branches** without being physically present. | **Centralized multi-branch system** letting owners switch between branches or view total shop revenue with one tap. |
+| **No visibility into real net profit** after wholesale parts costs. | **Advanced financial dashboard** that calculates wholesale cost, labor margin, deposits, and balances — while keeping parts pricing fully hidden from customers. |
+| **Work stops when the shop loses internet.** | **Offline-first architecture** — devices can still be received and delivered with no connection, syncing automatically once back online. |
 
 ---
 
-## 🚀 أبرز المزايا التنافسية (Features Showroom)
+## 🚀 Feature Showroom
 
-### 1. 📋 دورة حياة التذاكر الذكية وتوثيق الفحص (Smart Ticket Lifecycle)
-- **توليد تسلسلي تلقائي فريد** لكل جهاز (مثال: `TR-1001`، `TR-1002`).
-- **توثيق مصور سحابي:** التقاط صورة لحالة الجهاز الخارجية (الخدوش، الكسور، الشاشة) ورفعها سحابياً على Supabase Storage لمنع أي نزاع مع العميل عند الاستلام.
-- **تتبع الحالات التشغيلية بدقة:**
-  - 🟡 **قيد الفحص التشخيصي**
-  - 🟠 **بانتظار قطعة غيار**
-  - 🟢 **جاهز للاستلام**
-  - 🔵 **تم التسليم للعميل**
-  - 🔴 **مسترجع / ملغي**
+### 1. 📋 Smart Ticket Lifecycle & Inspection Documentation
+- **Automatic sequential ticket numbers** for every device (e.g., `TR-1001`, `TR-1002`).
+- **Cloud-based photo documentation:** capture the device's external condition (scratches, cracks, screen damage) and upload it to Supabase Storage — eliminating disputes at pickup.
+- **Precise status tracking:**
+  - 🟡 **Diagnostic Inspection**
+  - 🟠 **Awaiting Spare Part**
+  - 🟢 **Ready for Pickup**
+  - 🔵 **Delivered to Customer**
+  - 🔴 **Returned / Cancelled**
 
 ---
 
-### 2. 🌐 بوابة تتبع العملاء الحية أونلاين (Live Customer Tracking Portal)
-- رابط مباشر وخاص بكل جهاز:  
+### 2. 🌐 Live Customer Tracking Portal
+- A dedicated link for every device:
   `https://tarmim-769e5.web.app/track/TR-1001`
-- **يعمل بدون الحاجة لتسجيل دخول أو تحميل تطبيق من قِبل العميل.**
-- يعرض للعميل:
-  - حالة الصيانة الحالية ومراحل تقدم العمل.
-  - صورة فحص الجهاز عند الاستلام.
-  - الحسابات المالية (الإجمالي، المدفوع كمقدم، والمتبقي).
-  - بيانات ورشتك (الاسم، العنوان، وأزرار سريعة للاتصال والمراسلة).
-- **أمان وسرية تامة:** النظام يخفي تلقائياً سعر شراء قطع الغيار بالجملة وأرباح الفني ويظهر فقط السعر النهائي المعتمد للعميل.
+- **No login or app download required from the customer.**
+- Shows the customer:
+  - Current repair status and progress stages.
+  - The intake inspection photo.
+  - Financials (total cost, deposit paid, remaining balance).
+  - Shop details (name, address, and one-tap call/message buttons).
+- **Full privacy by design:** wholesale parts cost and technician margin are automatically hidden — customers only see the final approved price.
 
 ---
 
-### 3. 💬 إشعارات الواتساب الرسمية والـ SMS (Official Notifications Suite)
-- **إرسال واتساب رسمي مباشر بنقرة واحدة:** فتح رسالة مهيئة باحترافية على رقم العميل في تطبيق الواتساب الرسمي تتضمن تفاصيل الصيانة، الفاتورة، ورابط التتبع الحي (أمان 100% وبدون أي وسيط خارجي يهدد بحظر رقم الورشة).
-- **خدمات الرسائل القصيرة (Native SMS Gateway):** إرسال رسائل SMS من شريحة الموبايل مباشرة مع دعم الشرائح المتعددة (Dual SIM) والتشغيل الخلفي التلقائي.
+### 3. 💬 Official WhatsApp & SMS Notifications Suite
+- **One-tap official WhatsApp messaging:** opens a pre-filled, professional message directly in the customer's WhatsApp — including repair details, invoice, and the live tracking link (100% safe, no third-party service that could risk the shop's number being banned).
+- **Native SMS Gateway:** send SMS directly from the phone's SIM, with Dual SIM support and automatic background sending.
 
 ---
 
-### 4. 🏢 إدارة الفروع وتحديد الصلاحيات (Enterprise Multi-Branch RBAC)
-- **التحكم المركزي للمالك:**
-  - المالك يرى كافة الفروع التابعة (الفرع الرئيسي، المعادي، الدقي، إلخ).
-  - إمكانية التبديل بين الفروع أو اختيار **«عرض جميع فروع الورشة»** للاطلاع على إجمالي نشاط الشبكة.
-- **عزل أمني تام لحسابات الفروع:**
-  - موظف الفرع يرى تذاكر وأجهزة فرعه فقط، مع قفل مبدل الفروع وصفحات إدارة الاشتراكات تلقائياً.
-- **دخول مرن وسهل بالـ PIN:**
-  - يمكن للفروع استخدام **نفس رقم هاتف المحل**، حيث يُميّز النظام الفرع تلقائياً عن المالك بناءً على رمز الدخول (PIN)، دون الحاجة لشراء شرائح اتصال إضافية لكل فرع.
+### 4. 🏢 Multi-Branch Management & Role-Based Access Control
+- **Centralized owner control:**
+  - The owner sees every branch (Main Branch, Maadi, Dokki, etc.).
+  - Switch between branches or select **"View All Branches"** for a network-wide overview.
+- **Complete data isolation per branch:**
+  - Branch staff only see tickets and devices for their own branch; the branch switcher and subscription pages are automatically locked.
+- **Flexible PIN-based login:**
+  - Branches can share **the same shop phone number** — the system distinguishes owner vs. branch automatically via PIN code, with no need for extra SIM cards per branch.
 
 ---
 
-### 5. 📊 لوحة التحليلات والتقارير المالية (Analytics & Financial Dashboard)
-- **مؤشرات أداء الورشة الفورية (KPIs):**
-  - إجمالي الدخل وصافي الأرباح الحقيقية بعد خصم تكلفة قطع الغيار.
-  - عدد الأجهزة المنجزة، قيد الفحص، وبانتظار القطع.
-  - متوسط وقت الإصلاح ومعدل تحويل الزبائن.
-- **تصفية دورية متقدمة:** تقارير يومية، أسبوعية، شهرية، وسنوية تفصيلية تدعم اتخاذ القرارات وتطوير الأعمال.
+### 5. 📊 Analytics & Financial Dashboard
+- **Real-time workshop KPIs:**
+  - Total revenue and true net profit after parts cost.
+  - Devices completed, under inspection, and awaiting parts.
+  - Average repair time and customer conversion rate.
+- **Advanced period filtering:** detailed daily, weekly, monthly, and yearly reports to support business decisions and growth.
 
 ---
 
-### 6. 🚨 مركز التنبيهات والذكاء التشغيلي (Workshop Alert Analyzer)
-- جرس تنبيهات تفاعلي أعلى الشاشة ينبهك ذكياً إلى:
-  - ⚠️ أجهزة تجاوزت فترة الإصلاح المحددة.
-  - 📦 أجهزة بانتظار توفير قطع غيار لطلبها من الموردين فوراً.
-  - 🔔 أجهزة جاهزة للاستلام ومضى عليها أكثر من 48 ساعة دون استلام الزبون.
+### 6. 🚨 Smart Alert & Operations Center
+- An interactive notification bell that intelligently flags:
+  - ⚠️ Devices that have exceeded their expected repair time.
+  - 📦 Devices awaiting spare parts that need to be ordered from suppliers immediately.
+  - 🔔 Devices ready for pickup for more than 48 hours without customer collection.
 
 ---
 
-### 7. 👥 دليل العملاء وسجل العمليات (Customer CRM Directory)
-- ملف تعريفي شامل لكل عميل يحتوي على:
-  - أرقام هواتفه وعنوانه.
-  - السجل الكامل لكافة الأجهزة التي قام بإصلاحها في المحل سابقاً.
-  - سجل المدفوعات والديون المتبقية.
-  - أزرار اتصال ومراسلة واتساب فورية مباشرة من داخل حسابه.
+### 7. 👥 Customer CRM Directory
+- A complete profile for every customer, including:
+  - Phone numbers and address.
+  - Full history of every device previously repaired at the shop.
+  - Payment history and outstanding balances.
+  - One-tap call and WhatsApp buttons directly from their profile.
 
 ---
 
-### 8. 🎨 واجهة وتجربة مستخدم عالمية (UX / UI Design System)
-- **دعم كامل للغة العربية (100% Native RTL).**
-- **الوضع الليلي الفاخر (Dark Mode)** لراحة عيون الفنيين أثناء العمل الليلي، بجانب الوضع النهاري الكلاسيكي (Light Mode).
-- **حوار تأكيد خروج ذكي (Smart Exit Confirmation)** لمنع إغلاق التطبيق بطريق الخطأ أثناء العمل وحماية البيانات.
+### 8. 🎨 World-Class UX / UI Design System
+- **Full native Arabic RTL support.**
+- **Premium Dark Mode** for technicians working late, alongside a classic Light Mode.
+- **Smart exit confirmation dialog** to prevent accidental app closure mid-task and protect data.
 
 ---
 
-## 💎 خطط الاشتراك ونموذج البيع (SaaS Monetization Model)
+## 💎 Subscription Plans & SaaS Monetization Model
 
-صُمم النظام ليكون جاهزاً للبيع بنموذج الاشتراكات الشهرية أو السنوية (Software as a Service) عبر نظام تراخيص سحابي محكم:
+Built to be sold as a Software-as-a-Service product with a secure cloud licensing system:
 
 ```
 ┌───────────────────────────┐      ┌───────────────────────────┐      ┌───────────────────────────┐
-│     الباقة التجريبية      │      │    باقة المحل المنفرد     │      │     باقة شبكة الفروع      │
-│         (Trial)           │      │        (Pro Plan)         │      │    (Enterprise Plan)      │
+│         Trial Plan        │      │       Pro Plan            │      │     Enterprise Plan       │
+│                            │      │    (Single Shop)          │      │  (Multi-Branch Network)   │
 ├───────────────────────────┤      ├───────────────────────────┤      ├───────────────────────────┤
-│ • 14 يوماً مجاناً          │      │ • فرع واحد رئيسي          │      │ • عدد فروع غير محدود      │
-│ • تجربة كافة المزايا     │      │ • تذاكر غير محدودة        │      │ • صلاحيات مستقلة لكل فرع  │
-│ • دعم التتبع المباشر     │      │ • واتساب ورسائل تتبع      │      │ • تقارير مالية مجمعة      │
-│ • سحابة متزامنة           │      │ • دعم فني وتحديثات        │      │ • دعم فني مخصص 24/7       │
+│ • 14 days free            │      │ • One main branch         │      │ • Unlimited branches      │
+│ • Full feature access     │      │ • Unlimited tickets       │      │ • Independent branch      │
+│ • Live tracking support   │      │ • WhatsApp & SMS tracking │      │   permissions             │
+│ • Cloud sync              │      │ • Support & updates       │      │ • Consolidated financial  │
+│                           │      │                           │      │   reports                 │
+│                           │      │                           │      │ • Dedicated 24/7 support  │
 └───────────────────────────┘      └───────────────────────────┘      └───────────────────────────┘
 ```
 
-- **تفعيل فوري بأكواد رقمية (License Keys):** يمكن إنشاء أكواد ترخيص مسبقة الدفع ذات استخدام واحد (`XXXX-XXXX-XXXX-XXXX`) لتفعيل الاشتراكات للعملاء بدون تعقيدات بنكية.
+- **Instant activation via digital license keys:** single-use, prepaid license codes (`XXXX-XXXX-XXXX-XXXX`) can be generated to activate customer subscriptions with zero banking complexity.
 
 ---
 
-## 📢 نصوص تسويقية جاهزة لحملاتك الإعلانية (Ready Sales Pitch Copy)
+## 📢 Ready-to-Use Sales & Marketing Copy
 
-### 📣 الصيغة الأولى: استهداف أصحاب محلات الصيانة (على فيسبوك / تيك توك)
-> **«لسه بتسجل أجهزة الصيانة في دفتر ورقي والزبون كل شوية يسألك: الجهاز خلص ولا لسه؟ 📱🤦‍♂️»**
+### 📣 Version 1: Targeting Repair Shop Owners (Facebook / TikTok Ads)
+> **"Still logging repairs in a paper notebook while customers keep asking: 'Is it ready yet?' 📱🤦‍♂️"**
 >
-> طوّر ورشتك اليوم مع تطبيق **ترميم (Tarmeem)** أقوى نظام سحابي لإدارة مراكز صيانة المحمول والإلكترونيات:
-> 
-> ✅ **إيصال فوري برابط تتبع مباشر أونلاين** يوصل لعميلك على الواتساب مع صورة فحص جهازه.
-> ✅ **إشعار فوري للعميل على الواتساب** بمجرد ما الجهاز يتصلح بدون أي وسيط خارجي.
-> ✅ **حساب أرباحك الحقيقية** بدقة بعد خصم سعر قطع الغيار بالجملة.
-> ✅ **إدارة كل فروعك بحساب واحد** ومتابعة حركة الشغل وأنت في بيتك!
-> ✅ **شغال حتى لو النت فصل في المحل!**
+> Upgrade your shop today with **Tarmeem**, the most powerful cloud platform for managing phone and electronics repair centers:
 >
-> 🎁 جرب التطبيق الآن مجاناً لمدة 14 يوماً واكتشف الفرق بنفسك!  
-> 🔗 رابط التجربة المباشرة: [https://tarmim-769e5.web.app](https://tarmim-769e5.web.app)
+> ✅ **Instant digital receipt with a live tracking link**, sent to your customer on WhatsApp with an inspection photo of their device.
+> ✅ **Automatic WhatsApp notification** the moment a device is repaired — no third-party middleman involved.
+> ✅ **See your real profit** after wholesale parts costs, calculated automatically.
+> ✅ **Manage every branch from one account** and track your business from home.
+> ✅ **Keeps working even when the internet is down!**
+>
+> 🎁 Try it free for 14 days and see the difference for yourself!
+> 🔗 Live demo: [https://tarmim-769e5.web.app](https://tarmim-769e5.web.app)
 
 ---
 
-### 📣 الصيغة الثانية: رسالة مبيعات مباشرة (واتساب للعملاء المستهدفين)
-> مرحباً يا هندسة 🤝  
-> لو عندك محل أو مركز صيانة، حابين نشاركك نظام **«ترميم»** المصمم خصيصاً لتنظيم وإدارة مراكز الصيانة وزيادة ثقة الزبائن.  
-> النظام بيقدملك رابط تتبع أونلاين مجاني لعملائك، وإرسال إشعارات واتساب تلقائية، وحساب أرباحك وتكاليفك بدون دفاتر أو شيتات إكسيل معقدة، مع إمكانية ربط كل فروعك في شاشة واحدة.  
-> 
-> يمكنك تجربة المنظومة والاطلاع على النسخة التجريبية مباشرة من هنا:  
+### 📣 Version 2: Direct Sales Message (WhatsApp Outreach)
+> Hey there 🤝
+> If you run a repair shop or service center, we'd love to introduce you to **Tarmeem** — a system built specifically to organize repair operations and build customer trust.
+> It gives you a free live tracking link for your customers, automatic WhatsApp notifications, and clear profit/cost calculations — no notebooks or messy spreadsheets — plus the ability to manage every branch from a single screen.
+>
+> Try the platform and check out the live demo here:
 > 🌐 [https://tarmim-769e5.web.app](https://tarmim-769e5.web.app)
 
 ---
 
-## 🛠️ المعمارية التقنية (Technical Stack)
+## 🛠️ Technical Stack
 
 - **Framework:** Flutter 3.38+ (Dart 3.10+)
 - **State Management:** BLoC / Cubit Architecture
 - **Cloud Database:** Google Firebase Cloud Firestore (Multi-Tenant Schemas)
-- **Cloud Storage:** Supabase Object Storage (Public image buckets for inspection photos)
-- **Local Storage:** Hive & SharedPreferences (Offline-first caching engine)
+- **Cloud Storage:** Supabase Object Storage (public image buckets for inspection photos)
+- **Local Storage:** Hive & SharedPreferences (offline-first caching engine)
 - **Messaging:** Official WhatsApp Deep-Link Launcher + Android Native Telephony SMS
 - **Hosting & Web:** Firebase Hosting (Progressive Web App with HTML5 history routing)
 
 ---
 
-## 🚀 البدء والتشغيل محلياً (Quickstart)
+## 🚀 Quickstart
 
-1. **استنساخ المستودع:**
+1. **Clone the repository:**
    ```bash
    git clone https://github.com/your-username/tarmim.git
    cd tarmim
    ```
 
-2. **تثبيت الحزم البرمجية:**
+2. **Install dependencies:**
    ```bash
    flutter pub get
    ```
 
-3. **تشغيل فحص الكود والتحقق:**
+3. **Run static analysis:**
    ```bash
    flutter analyze
    ```
 
-4. **التشغيل على المحاكي أو الهاتف:**
+4. **Run on an emulator or device:**
    ```bash
    flutter run
    ```
 
-5. **بناء نسخة الويب للإنتاج:**
+5. **Build the production web release:**
    ```bash
    flutter build web --release
    ```
@@ -195,6 +198,6 @@
 ---
 
 <p align="center">
-  صُنع بإتقان وشغف لدعم قطاع صيانة الأجهزة الإلكترونية في العالم العربي 🛠️❤️<br>
-  <b>ترميم (Tarmeem) — شريكك الذكي في إدارة وتطوير ورشتك</b>
+  Built with care and passion to empower the electronics repair industry across the Arab world 🛠️❤️<br>
+  <b>Tarmeem — Your Smart Partner in Running and Growing Your Workshop</b>
 </p>
