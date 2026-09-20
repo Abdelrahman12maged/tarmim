@@ -10,6 +10,18 @@
 
 ---
 
+## 🎬 Video Demo
+
+<div align="center">
+
+[![Watch the demo](https://img.youtube.com/vi/l-WXC-uBrVk/hqdefault.jpg)](https://youtube.com/shorts/l-WXC-uBrVk)
+
+**▶ Click the thumbnail above to watch the full demo on YouTube**
+
+</div>
+
+---
+
 ## 💡 Elevator Pitch
 
 **Tarmeem** is a complete cloud platform built specifically for phone, laptop, and electronics repair shop owners. It transforms workshop management from error-prone paper logs into a **fully automated, professional operation** — delivering a polished digital experience to customers while giving owners full control over revenue, branches, and inventory, anytime and from anywhere.
